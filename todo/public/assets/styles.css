@@ -1,15 +1,15 @@
  /*Resource from https://github.com/iamshaunjp/node-js-playlist*/
 
  body{
-     background: #0d1521;
+     background: #559199;
      font-family: tahoma;
-     color: #989898;
+     color: #fff;
  }
 
  #todo-table{
      position: relative;
      width: 95%;
-     background: #090d13;
+     background: #E6AC98;
      margin: 0 auto;
      padding: 20px;
      box-sizing: border-box;
@@ -25,18 +25,18 @@
  input[type="text"]{
      width: 70%;
      padding: 20px;
-     background:#181c22;
+     background:#F7DFD3;
      border: 0;
      float: left;
      font-size: 20px;
-     color: #989898;
+     color: #fff;
  }
 
  button{
      padding: 20px;
      width: 30%;
      float: left;
-     background: #23282e;
+     background: #947E70;
      border: 0;
      box-sizing: border-box;
      color: #fff;
