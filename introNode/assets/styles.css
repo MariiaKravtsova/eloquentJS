@@ -1,0 +1,15 @@
+body {
+  background: skyblue;
+  font-family: fantasy;
+  color: #fff;
+  padding: 30%;
+}
+h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+}
+p,li {
+  font-size: 1em;
+  text-align: center;
+}
