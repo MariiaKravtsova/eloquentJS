@@ -8,4 +8,4 @@ Install dependencies with `npm install`
 Run the app with `node app`
 
 ## Screenshot
-![To Do App Screenshot](https://drive.google.com/open?id=0B4KgA-QcJKTqYjZEeDVIRklNd1U "To Do App Screenshot")
+![To Do App Screenshot](https://raw.githubusercontent.com/MariiaKravtsova/mariiakravtsova.github.io/eloquentJS/blob/master/todo/todoApp.png "To Do App Screenshot")
