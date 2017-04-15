@@ -1,18 +1,18 @@
-const amount = document.querySelector('.amount');
-const percent = document.getElementById('percent');
+const amountElement = document.querySelector('.amount');
+const percentElement = document.getElementById('percent');
 const calculateButton = document.querySelector('[data-action="calculate"]');
-let tip = document.querySelector('.tip');
-let total = document.querySelector('.total');
+const tipElement = document.querySelector('.tip');
+const totalElement = document.querySelector('.total');
 
-function calculateTotal() {
-    this.total = parseFloat(amount.value) + this.tip;
-    total.innerText = this.total;
+function calculateTotal(tip) {
+    total = parseFloat(amountElement.value) + tip;
+    totalElement.innerText = total.toFixed(2);
 }
 
 function calculateTip() {
-    this.tip = parseFloat(amount.value) * (parseFloat(percent.value) / 100);
-    tip.innerText = this.tip;
+    tip = parseFloat(amountElement.value) * (parseFloat(percentElement.value) / 100);
+    tipElement.innerText = tip.toFixed(2);
+    calculateTotal(tip);
 }
 
 calculateButton.addEventListener('click', calculateTip);
-calculateButton.addEventListener('click', calculateTotal);
