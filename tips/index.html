@@ -1,0 +1,33 @@
+<!<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <title>Tip Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col s12">
+                <h3>Calculate your tip here. Be generous.</h3>
+            </div>
+            <div class="col s6"> 
+                Amount: <input class="amount" type="number"> 
+                Gratuity percent: <input id="percent" type="number">
+                <button class="waves-effect waves-light btn" data-action="calculate">Calculate</button>
+            </div>
+            <div class="col s6"> 
+                <h5>Tip: <span class="tip">0.0</span></h5>
+                <h5>Total: <span class="total">0.0</span></h5>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
