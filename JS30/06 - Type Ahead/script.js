@@ -2,9 +2,10 @@ const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb
 const cities = [];
 
 fetch(endpoint)
-    .then( (blob) => blob.json()
-    .then( (data) => cities.push(...data)));
+    .then( (blob) => blob.json() //blog has a ton of extra stuff
+    .then( (data) => cities.push(...data))); //only add the data to the array
 
+// create the regex variable and use it to filter the array
 function findMatches(wordToMatch, cities) {
     return cities.filter(place => {
         const regex = new RegExp(wordToMatch, 'gi');
@@ -12,10 +13,12 @@ function findMatches(wordToMatch, cities) {
     });
 }
 
+// for population number to be formated with commas
 function numberWithCommas(x) {
     return x.toString().split( /(?=(?:\d{3})+(?:\.|$))/g ).join( "," );
 }
 
+// create an array of matching word, highlight the word and display the array in a list
 function displayMatches() {
     const matchArray = findMatches(this.value, cities);
     const html = matchArray.map( (place) => {
@@ -34,6 +37,7 @@ function displayMatches() {
 const searchInput = document.querySelector('.search');
 const suggestions = document.querySelector('.suggestions');
 
+// call the function on typing and on clicking off it
 searchInput.addEventListener('change', displayMatches);
 searchInput.addEventListener('keyup', displayMatches);
 
